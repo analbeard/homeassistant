@@ -25,7 +25,7 @@ jobs:
       - run: cp -v ci/google-assistant.json secrets/google-assistant.json
       - name: 'yamllint'
         id: lint
-        uses: ibiqlik/action-yamllint@v3.0.1
+        uses: ibiqlik/action-yamllint@v3.0.2
         with:
           config_file: ci/yamllint.yml
         continue-on-error: true
@@ -72,7 +72,7 @@ jobs:
       - run: cp -v ci/google-assistant.json secrets/google-assistant.json
       - name: 'yamllint'
         id: lint
-        uses: ibiqlik/action-yamllint@v3.0.1
+        uses: ibiqlik/action-yamllint@v3.0.2
         with:
           config_file: ci/yamllint.yml
       - name: Load .env file
